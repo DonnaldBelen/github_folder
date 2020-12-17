@@ -110,9 +110,9 @@ for filename in filenames:
     yaxis = 'y1'
     # Kinect Look Point Y vs t
     xdata = df_Kinect["sensing_time"]
-    if int(sys.argv[2]) == 0:
+    if int(sys.argv[3]) == 0:
         ydata = df_Kinect[columns_2[targ_column+1]]
-    elif int(sys.argv[2]) == 1:
+    elif int(sys.argv[3]) == 1:
         ydata = df_Kinect[columns_3[targ_column+1]]
 
     trace_kinect = plotly.graph_objs.Scatter(
@@ -127,10 +127,10 @@ for filename in filenames:
     yaxis = 'y2'
     # Kinect Look Point Z vs t
     xdata = df_Kinect["sensing_time"]
-    if int(sys.argv[2]) == 0:
-        ydata = df_Kinect[columns_2[targ_column+1]]
-    elif int(sys.argv[2]) == 1:
-        ydata = df_Kinect[columns_3[targ_column+1]]
+    if int(sys.argv[3]) == 0:
+        ydata = df_Kinect[columns_2[targ_column+2]]
+    elif int(sys.argv[3]) == 1:
+        ydata = df_Kinect[columns_3[targ_column+2]]
 
     trace_kinect = plotly.graph_objs.Scatter(
         x = xdata,y= ydata,xaxis=xaxis,yaxis=yaxis,
