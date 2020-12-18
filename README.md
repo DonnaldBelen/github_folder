@@ -3,9 +3,7 @@
 
 -github_folder
 L->input
-
 L->taskname
-
    L->input_files.csv / (file.format)
    L->readme.txt
 L->output
