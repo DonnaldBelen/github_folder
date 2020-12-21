@@ -11,5 +11,6 @@ Thumbs.db
 
 ### document files ###
 ######################
-.csv
-.xlsx
+*.csv
+*.xlsx
+*.xls
